@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A fast, read-only make.fun frontend: live bounty board, bounty pages, leaderboards and public profiles.">
+<title>make.fun bounties — lean frontend</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="top">
+  <a class="brand" href="#/">make.fun <span>lean</span></a>
+  <nav aria-label="Sections">
+    <a href="#/">Board</a>
+    <a href="#/bounty/makefun-frontend-01">This bounty</a>
+  </nav>
+  <form id="lookup" role="search" aria-label="Look up an account">
+    <label class="visually-hidden" for="handle">Account handle</label>
+    <input id="handle" name="handle" type="search" placeholder="@handle" autocomplete="off">
+    <button type="submit">Profile</button>
+  </form>
+</header>
+<main id="app" aria-live="polite"></main>
+<footer><p>Read-only client for <a href="https://make.fun/">make.fun</a> · live data from the public API · no sign-in, no tracking.</p></footer>
+</body>
+</html>
